@@ -13,8 +13,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter tutorials',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter tutorials')),
-        body: Container(
-
+        body: Column(
+          children: <Widget>[
+            Image.asset(
+              'images/lake.jpg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            )
+          ],
         ),
       ),
     );
